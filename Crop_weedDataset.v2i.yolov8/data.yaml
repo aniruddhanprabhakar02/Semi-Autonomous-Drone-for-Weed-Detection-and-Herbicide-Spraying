@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['crop', 'weed']
+
+roboflow:
+  workspace: walker-6w6cm
+  project: corndataset-clyka-purhk
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/walker-6w6cm/corndataset-clyka-purhk/dataset/2
