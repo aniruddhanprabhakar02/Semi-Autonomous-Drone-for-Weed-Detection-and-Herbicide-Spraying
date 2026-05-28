@@ -224,27 +224,36 @@ The spraying mechanism uses an ultrasonic humidifier-based system for fine-mist 
 # Repository Structure
 
 ```text
-
 Semi-Autonomous-Drone-for-Weed-Detection-and-Herbicide-Spraying/
 │
 ├── Classes/
 │   └── weed_classes.txt
 │
 ├── code/
-│   ├── Herbicide Spraying/
-│   │   └── raspberrypi_spray_control.py
-│   │
-│   └── Weed Detection/
-│       ├── yolov11n_realtime_inference.py
-│       └── tflite_edge_inference.py
+│   ├── yolov11n_realtime_inference.py
+│   ├── tflite_edge_inference.py
+│   └── raspberrypi_spray_control.py
 │
 ├── Crop_weedDataset.v2i.yolov8/
+│   ├── train/
+│   ├── valid/
+│   ├── test/
+│   └── data.yaml
 │
 ├── Demo Video/
+│   └── demo.mp4
 │
 ├── Diagrams/
+│   ├── weed_detection_pipeline.png
+│   ├── drone_hardware_architecture.png
+│   └── spraying_workflow.png
 │
 ├── Images/
+│   ├── detection_output.png
+│   ├── raspberry_pi_setup.jpg
+│   ├── drone_setup.jpg
+│   ├── spraying_setup.jpg
+│   └── realtime_detection_output.jpg
 │
 ├── Models/
 │   ├── yolov_distill_best_int8.tflite
@@ -255,10 +264,12 @@ Semi-Autonomous-Drone-for-Weed-Detection-and-Herbicide-Spraying/
 │   └── swin_transformer_kd_training.ipynb
 │
 ├── Training file/
+│   └── training_configuration_details.txt
 │
 ├── .gitignore
 ├── README.md
 └── Requirement.txt
+```
 
 ---
 
